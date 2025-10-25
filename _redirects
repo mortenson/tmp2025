@@ -1,1 +1,2 @@
-/foo              http://localhost/flag
+/foo              http://localhost/flag?google.com/safeurl
+/bar              /foo
