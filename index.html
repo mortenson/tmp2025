@@ -1,6 +1,12 @@
 <body>
   <div id="huh"></div>
+  <iframe src="http://localhost/flag"></iframe>
+  <img src="http://localhost/flag" />
   <script>
-    huh.innerText = "foo"
+    async function foo() {
+      const result = await fetch('http://localhost/flag')
+      huh.innerText = await result.text()
+    }
+    foo()
   </script>
 </body>
